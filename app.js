@@ -18,6 +18,7 @@ const chats = [];
 io.sockets.on("error", (e) => console.log(e));
 
 io.sockets.on("connection", (socket) => {
+  console.log("connected")
   socket.on("login", (user) => {
     const userExist = users.find((item) => item?.name == user);
 
