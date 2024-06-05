@@ -10,13 +10,7 @@ app.get("/", (req, res) => {
 })
 
 const users = [
-  { name: "Joshua", active: true, time: Date.now(), lastMsgChat: "" },
-  {
-    name: "Moyin",
-    active: true,
-    time: Date.now(),
-    lastMsgChat: {},
-  },
+ 
 ];
 
 const chats = [];
