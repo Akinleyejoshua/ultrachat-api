@@ -5,6 +5,10 @@ const http = require("http");
 const server = http.createServer(app);
 const io = require("socket.io")(server, { cors: { origin: "*" } });
 
+app.get("/", (req, res) => {
+  res.send("API WORKING")
+})
+
 const users = [
   { name: "Joshua", active: true, time: Date.now(), lastMsgChat: "" },
   {
